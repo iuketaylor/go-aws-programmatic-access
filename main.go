@@ -109,7 +109,8 @@ func runScript(accountId string, accountName string, cfg Config) {
 		return
 	}
 
-	err = exec.Command("bash", "-c", "source /Users/taylol04/.aws_credentials").Run()
+	command := fmt.Sprintf("source %s", cfg.AwsCredentialsPath)
+	err = exec.Command("bash", "-c", command).Run()
 	if err != nil {
 		fmt.Println("Error sourcing file:", err)
 		return
