@@ -15,7 +15,7 @@ INNOVATION_ID=<innovation account ID>
 
 ```
 
-* run `go.build` to build the binary 
+* run `go build` to build the binary 
 * add the binary to your PATH env variable $HOME/<path to binary>
 * optional add an alias eg: `alias wh='go-ibl-wormhole'`
 * run `wh` then select which ever option you want
